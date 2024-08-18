@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Car rental website</title>
+        <link rel="stylesheet" href="./css/index.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            </style>
+    </head>
+    <body>
+        <!-- navbar -->
+
+        <div class="navbar">
+            <div class="navbar__container">
+                <div class="navbar__brand">
+                    <img src="./images/carRental.png" alt="" />
+                </div>
+
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="navbar__options">
+                    <div class="About">About</div>
+                    <div class="Offers">Offers</div>
+                    <div class="Corporate">Corporate</div>
+                    <div class="Personal">Personal</div>
+                    <div class="Locations">Locations</div>
+                    <div class="contact">Contact us</div>
+                    <div class="bell__icon">
+                        <img src="./images/bellicon.svg" alt="" />
+                    </div>
+                    <div class="user">
+                        <img src="./images/name.svg" alt="">
+                    </div>
+                </div>
+              
+            </div> 
+            <div class="navbar__text">
+                Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand
+                Sales Counters | All Rates inclusive of VAT. T&C’s apply | Follow us
+                on Social Media for New Offers
+            </div>
+
+            <div class="nav__social-icons">
+                <img src="./images/insta fb x in.svg" alt="">
+            </div>
+
+        </div> 
+       
+
+        <!-- booking container -->
+
+        <div class="booking__container">
+            <div class="booking__menu">
+                <div class="booking__menu--1">
+                    <div class="pickup">Same as Pick-Up</div>
+                    <div class="dropoff">Different Drop-off</div>
+                    <select name="" class="vehicle__type">
+                        <option value="">Select vehicle type</option>
+                        <option value="">Maruthy</option>
+                        <option value="">Alto</option>
+                        <option value="">nano</option>
+                    </select>
+                </div>
+                <div class="booking__menu--2">
+                    <div class="dropdown-container">
+                        <select class="location-select">
+                            <option value="al-quoz" selected>Al Quoz</option>
+                            <option value="deira">Deira</option>
+                            <option value="jumeirah">Jumeirah</option>
+                            <option value="marina">Marina</option>
+                        </select>
+                    </div>
+                    <div class="date-picker-container">
+                        <!-- Hidden datetime-local input -->
+                        <input
+                            type="datetime-local"
+                            id="date-time-picker"
+                            class="date-picker-hidden"
+                            value="2024-08-13T14:30"
+                        />
+
+                        <!-- Custom clickable area -->
+                        <div class="custom-date-picker">
+                            <input
+                                type="text"
+                                id="date-time-display"
+                                class="date-picker-display"
+                                readonly
+                                placeholder="Select Date & Time"
+                            />
+                            <button
+                                id="calendar-button"
+                                class="calendar-button"
+                            >
+                                <img
+                                    src="./images/calender.png"
+                                    alt="Calendar Icon"
+                                    class="calendar-icon"
+                                />
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="date-picker-container">
+                        <!-- Hidden datetime-local input -->
+                        <input
+                            type="datetime-local"
+                            id="date-time-picker-2"
+                            class="date-picker-hidden"
+                            value="2024-08-13T14:30"
+                        />
+
+                        <!-- Custom clickable area -->
+                        <div class="custom-date-picker">
+                            <input
+                                type="text"
+                                id="date-time-display-2"
+                                class="date-picker-display"
+                                readonly
+                                placeholder="Select Date & Time"
+                            />
+                            <button
+                                id="calendar-button"
+                                class="calendar-button"
+                            >
+                                <img
+                                    src="./images/calender.png"
+                                    alt="Calendar Icon"
+                                    class="calendar-icon"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="searchBox">
+                        <img src="./images/searchbox.png" alt="" />
+                    </div>
+                    <div class="straightline"></div>
+                    <div class="quickbook">
+                        <span>Quick book</span>
+                    </div>
+                </div>
+                <div class="booking__menu--3">
+                    <div class="menu__test">
+                        Download our App for easy accessibility anytime,
+                        anywhere!
+                    </div>
+                    <div class="icon__group">
+                    <div class="app-store">
+                        <img src="./images/App Store.png" alt="app store pic" />
+                    </div>
+                    <div class="google-play">
+                        <img
+                            src="./images/google play.png"
+                            alt="google play pic"
+                        />
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="phone">
+                <img src="./images/phone.png" alt="" />
+            </div>
+            <div class="white__bg">
+                <img src="./images/white bg.png" alt="" />
+            </div>
+            <div class="numbering">
+                <img src="./images/twentyfour.png" alt="" />
+            </div>
+        </div>
+        <!-- mobile view -->
+         <div class="mobile__view">
+            <div class="buttons">
+                <div class="button ">
+                    <button class="btn">Book a Car</button>
+                </div>
+                <div class="button ">
+                    <button class="btn btn--white">Quick book</button>
+                </div>
+            </div>  
+            <div class="mobile__menu">
+                <div class="mobile__menu-wrapper">
+                    <div class="mobile-pickup">Same as Pick-Up</div>
+                    <div class="mobile-dropoff">Different Drop-off</div>
+                    <select name="" class="mobile-vehicle">
+                        <option value="">vehicle type</option>
+                        <option value="">Maruthy</option>
+                        <option value="">Alto</option>
+                        <option value="">nano</option>
+                    </select>
+                </div>
+
+                <div class="mobile__input-grp">
+                    <select class="location-select">
+                        <option value="al-quoz">Pick up Location</option>
+                        <option value="al-quoz">Al Quoz</option>
+                        <option value="deira">Deira</option>
+                        <option value="jumeirah">Jumeirah</option>
+                        <option value="marina">Marina</option>
+                    </select>
+                    <select class="location-select">
+                        <option value="al-quoz">Drop Off Location</option>
+                        <option value="al-quoz">Al Quoz</option>
+                        <option value="deira">Deira</option>
+                        <option value="jumeirah">Jumeirah</option>
+                        <option value="marina">Marina</option>
+                    </select>
+                    <div class="date-picker-container">
+                        <!-- Hidden datetime-local input -->
+                        <input
+                            type="datetime-local"
+                            id="date-time-picker"
+                            class="date-picker-hidden"
+                            value="2024-08-13T14:30"
+                        />
+
+                        <!-- Custom clickable area -->
+                        <div class="custom-date-picker">
+                            <input
+                                type="text"
+                                id="date-time-display"
+                                class="date-picker-display date-picker-display--2"
+                                readonly
+                                placeholder="Pick-Up Date & Time"
+                            />
+                            <button
+                                id="calendar-button"
+                                class="calendar-button"
+                            >
+                                <img
+                                    src="./images/calender.png"
+                                    alt="Calendar Icon"
+                                    class="calendar-icon"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="date-picker-container">
+                        <!-- Hidden datetime-local input -->
+                        <input
+                            type="datetime-local"
+                            id="date-time-picker"
+                            class="date-picker-hidden"
+                            value="2024-08-13T14:30"
+                        />
+
+                        <!-- Custom clickable area -->
+                        <div class="custom-date-picker">
+                            <input
+                                type="text"
+                                id="date-time-display"
+                                class="date-picker-display date-picker-display--2"
+                                readonly
+                                placeholder="Drop Off Date & Time"
+                            />
+                            <button
+                                id="calendar-button"
+                                class="calendar-button"
+                            >
+                                <img
+                                    src="./images/calender.png"
+                                    alt="Calendar Icon"
+                                    class="calendar-icon"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+         </div>
+
+
+
+        
+
+        <div class="banner__container">
+            <img
+                src="./images/bannner2.png"
+                alt="Banner Image"
+                class="banner__image"
+            />
+            <div class="banner__text">
+                Recieve guarnteed
+                <span class="gift__voucher">GIFT VOUCHER</span> <br />
+                on a monthly hire or lease
+            </div>
+            <div class="dots-container">
+                <span class="dot gray-dot"></span>
+                <span class="dot white-dot"></span>
+                <span class="dot gray-dot"></span>
+                <span class="dot gray-dot"></span>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card__text">Most popular cars</div>
+            <div class="card__container">
+                <div class="card">
+                    <div class="card__img--container">
+                        <img src="./images/blue car.png" alt="" />
+                    </div>
+                    <div class="card__description">
+                        <div class="card--header">Mitsubishi Eclipse</div>
+                        <div class="card--details">
+                            Eclipse Cross is a fusion of sharp coupe looks and
+                            dynamic SUV mobility with signature Mitsubishi
+                            styling, technology and driving confidence.
+                        </div>
+                        <div class="card--features">
+                            <div class="feature">
+                                <div class="icon__container">
+                                    <img src="./images/seat.png" alt="" />
+                                </div>
+                                <div class="icon__text">6 people</div>
+                            </div>
+                            <div class="feature">
+                                <div class="icon__container">
+                                    <img
+                                        src="./images/game-icons_car-door.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <span class="icon__text">Automatic</span>
+                            </div>
+                            <div class="feature">
+                                <div class="icon__container">
+                                    <img src="./images/automatic.png" alt="" />
+                                </div>
+                                <span class="icon__text">5 doors</span>
+                            </div>
+                            <div class="feature">
+                                <div class="icon__container">
+                                    <img
+                                        src="./images/streamline_hotel-air-conditioner.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <span class="icon__text">AC</span>
+                            </div>
+                        </div>
+                        <div class="card__lastsection">
+                            <div class="card--price">AED 2700/Monthly</div>
+                            <div class="card--booking">Book Now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img--container">
+                        <img src="./images/red car updated.png" alt="" />
+                    </div>
+                    <div class="card__description">
+                        <div class="card--header">Jac J7</div>
+                        <div class="card--details">
+                            S3 Plus has been rated Five-Star in C-NCAP including
+                            front impact, side impact, frontal side impact &
+                            Whipping test.
+                        </div>
+                        <div class="card--features">
+                            <div class="feature">
+                                <div class="icon__container">
+                                    <img src="./images/seat.png" alt="" />
+                                </div>
+                                <div class="icon__text">6 people</div>
+                            </div>
+                            <div class="feature">
+                                <div class="icon__container">
+                                    <img
+                                        src="./images/game-icons_car-door.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <span class="icon__text">Automatic</span>
+                            </div>
+                            <div class="feature">
+                                <div class="icon__container">
+                                    <img src="./images/game-icons_car-ggdoor.png" alt="" />
+                                </div>
+                                <span class="icon__text">5 doors</span>
+                            </div>
+                            <div class="feature">
+                                <div class="icon__container">
+                                    <img
+                                        src="./images/streamline_hotel-air-conditioner.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <span class="icon__text">AC</span>
+                            </div>
+                        </div>
+                        <div class="card__lastsection">
+                            <div class="card--price">AED 2700/Monthly</div>
+                            <div class="card--booking">Book Now</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="subscription__container">
+        <div class="sub__menu--1">
+            <div class="sub__1--heading">
+              Subscribe here for exclusive offers and updates!
+            </div> 
+            <div class="sub__1--input__group">
+                <input type="text" placeholder="Name">    
+                <input type="Email" placeholder="Email">
+            </div>
+            <div class="sub__1--text">
+                Don't miss out! enter your email and your name, then hit subscribe to unlock a world of special offers and details.
+            </div>
+          <button class="sub__1--button">
+            Subscribe
+          </button>
+        </div>
+        <div class="sub__menu--2"> 
+           <div class="sub__2--image__container">
+                <img src="./images/Rectangle.png" id="responsiveImage" alt="">
+           </div>
+           <div class="sub__2--desc__container">
+              <div class="sub__2--headText">
+                Enter your number and receive <br/>
+                    a direct link to download the app
+              </div>
+              <div class="sub__2--input">
+                    <input type="text" placeholder="Enter the phone number">
+              </div>
+              <div class="sub__2--button__container">
+                <div class="sub__2--button"> Get the link</div>
+                   
+              </div>
+              <div class="sub__2--appLinks">
+                    <p>Get it on</p>
+                    <div class="sub__2--linkGroup">
+                        <div class="link">
+                            <div class="linkIcon">
+                                <img src="./images/appleIcon.png" alt="">
+                            </div>
+                            <div class="linkText">
+                              <span class="smallText"> <img src="./images/download on the.svg" alt=""></span> <br/>
+                                <span class="largeText"><img src="./images/app store word.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <div class="linkIcon">
+                                <img src="./images/googlePlayIcon.png" alt="">
+                            </div>
+                            <div class="linkText">
+                                <span class="smallText"> <img src="./images/get it on the.svg" alt=""></span><br/> 
+                                  <span><img src="./images/google play word.svg" alt=""></span>
+                              </div>
+                              
+                        </div>
+                    </div>
+              </div>    
+
+           </div>
+
+        </div>
+
+    </div>    
+
+    <!-- rent menu --> 
+     <div class="rent__container">
+        <div class="rent__header">Rent/Lease In three easy steps</div>
+        <div class="rentboxes__container">
+                <div class="rentBox__wrapper">
+                    <div class="rentBox__number"><img src="./images/01 group.svg" alt=""></div>
+                    <div class="rentBox">
+                        <div class="rent__image--container">
+                            <img src="./images/rentLocation.svg" alt="">
+                        </div>
+                        <div class="rentBox__content">
+                            Select the location. Browse through our available options and find the perfect car to suit your needs
+                        </div>
+                    </div>
+                </div>
+                <div class="rentBox__wrapper">
+                    <div class="rentBox__number"><img src="./images/02 group.svg" alt=""></div>
+                     <div class="rentBox">
+                            <div class="rent__image--container">    
+                            <img src="./images/rentDate.svg" alt="">
+                        </div>
+                        <div class="rentBox__content">
+                            Choose your desired Pick-Up date and time.
+                        </div>
+                    </div>
+                </div>
+                <div class="rentBox__wrapper">
+                    <div class="rentBox__number"><img src="./images/03 group.svg" alt=""></div>
+                    <div class="rentBox">
+                        <div class="rent__image--container">
+                            <img src="./images/rentCar.svg" alt="">
+                        </div>
+                        <div class="rentBox__content">
+                            Make payment and book the car. Select an option to either have the car delivered to your location or pick it up directly from us.
+                        </div>
+                    </div>
+                </div>
+           
+        </div>
+     </div>
+
+<!-- location -->
+ <div class="location__section-wrapper">
+<div class="locations">
+    <div class="locations__header">Locations</div>
+    <ul class="locations__list">
+        <li class="location">
+            <img class="location__icon" src="./images/location icon.svg" alt="Location Icon">
+            <span class="location__text">Dubai</span>
+          
+        </li>
+        <li class="line"></li>
+        <li class="location">
+            <img class="location__icon" src="./images/location icon.svg" alt="Location Icon">
+            <span class="location__text">Abu Dhabi</span>
+        </li>
+        <li class="line"></li>
+        <li class="location">
+            <img class="location__icon" src="./images/location icon.svg" alt="Location Icon">
+            <span class="location__text">Sharjah</span>
+        </li>
+        <li class="line"></li>
+        <li class="location">
+            <img class="location__icon" src="./images/location icon.svg" alt="Location Icon">
+            <span class="location__text">Fujairah</span>
+        </li>
+        <li class="line"></li>
+        <li class="location">
+            <img class="location__icon" src="./images/location icon.svg" alt="Location Icon">
+            <span class="location__text">Ras Al Khaimah</span>
+        </li>
+    </ul>
+</div> 
+</div>
+
+<!-- frequently asked questions -->
+<div class="accordion__section-header">Frequently asked questions</div>
+
+<!-- Accordion section --> 
+<div class="accordion__section-wrapper">
+   
+    <div class="accordion__section">
+        <div class="accordion">
+            <div class="accordion__header">
+                <span class="accordion__question">What is my eligibility to book a car?</span>
+                <!-- <span class="accordion__icon accordion__icon--open">
+                    <img src="./images/plus.svg" alt="Open">
+                  </span> -->
+                  <span class="accordion__icon accordion__icon--close">
+                    <img src="./images/xmark.svg" alt="Close">
+                  </span>
+                
+            </div>
+            <div class="accordion__content">
+                You should be of 18 years old above and you must possess a valid driving license
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="accordion">
+            <div class="accordion__header">
+                
+                <span class="accordion__question">Can i book for any period of time?</span>
+                <span class="accordion__icon accordion__icon--open">
+                    <img src="./images/plus.svg" alt="Open">
+                  </span>
+                  <!-- <span class="accordion__icon accordion__icon--close">
+                    <img src="./images/xmark.svg" alt="Close">
+                  </span> -->
+            </div>
+            <!-- <div class="accordion__content">
+                You should be of 18 years old above and you must possess a valid driving license
+            </div> -->
+        </div>
+        <div class="divider"></div>
+        <div class="accordion">
+            <div class="accordion__header">
+               
+                <span class="accordion__question">Can i opt car for a longer period?</span>
+                <span class="accordion__icon accordion__icon--open">
+                    <img src="./images/plus.svg" alt="Open">
+                  </span>
+                  <!-- <span class="accordion__icon accordion__icon--close">
+                    <img src="./images/xmark.svg" alt="Close">
+                  </span> -->
+            </div>
+            <!-- <div class="accordion__content">
+                You should be of 18 years old above and you must possess a valid driving license
+            </div> -->
+        </div>
+        <div class="divider"></div>
+        <div class="accordion">
+            <div class="accordion__header">  
+                <span class="accordion__question">Can i book one-way trip?</span>
+                <span class="accordion__icon accordion__icon--open">
+                    <img src="./images/plus.svg" alt="Open">
+                  </span>
+                  <!-- <span class="accordion__icon accordion__icon--close">
+                    <img src="./images/xmark.svg" alt="Close">
+                  </span> -->
+            </div>
+            <!-- <div class="accordion__content">
+                You should be of 18 years old above and you must possess a valid driving license
+            </div> -->
+        </div>
+        <div class="divider"></div>
+        <div class="accordion">
+            <div class="accordion__header">
+                <span class="accordion__question"> Is there home delivery option available?</span>
+                <span class="accordion__icon accordion__icon--open">
+                    <img src="./images/plus.svg" alt="Open">
+                  </span>
+                  <!-- <span class="accordion__icon accordion__icon--close">
+                    <img src="./images/xmark.svg" alt="Close">
+                  </span> -->
+            </div>
+            <!-- <div class="accordion__content">
+                You should be of 18 years old above and you must possess a valid driving license
+            </div> -->
+        </div>
+        <div class="divider"></div>
+        <div class="accordion">
+            <div class="accordion__header">
+                <span class="accordion__question"> How can i make the payment?</span>
+                <span class="accordion__icon accordion__icon--open">
+                    <img src="./images/plus.svg" alt="Open">
+                  </span>
+                  <!-- <span class="accordion__icon accordion__icon--close">
+                    <img src="./images/xmark.svg" alt="Close">
+                  </span> -->
+            </div>
+            <!-- <div class="accordion__content">
+                You should be of 18 years old above and you must possess a valid driving license
+            </div> -->
+        </div>
+    </div>
+
+</div> 
+
+<!-- footer -->
+<footer class="footer-container">
+    <div class="footer-content">
+      <div class="footer-wrapper">
+        <div class="company-info">
+          <img src="./images/company logo.svg" alt="Company Logo" class="company-logo" />
+          <p class="company-tagline">Member of the <br /> Al Habtoor Group</p>
+        </div> 
+        <nav class="footer-links">
+         <section class="section__1">
+          <div class="link-column">
+            <a href="#" class="footer-link">Home</a>
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Services</a>
+          </div>
+          <div class="link-column">
+            <a href="#" class="footer-link">Offers</a>
+            <a href="#" class="footer-link">Locations</a>
+            <a href="#" class="footer-link">Contact Us</a>
+          </div>
+          <div class="link-column">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Service Request</a>
+          </div>
+          <div class="link-column">
+            <a href="#" class="footer-link">Career</a>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </div>
+        </section>
+        <div class="section__2">
+            <div class="companies-title">Al Habtoor Companies</div>
+            <div class="companies_list-wrapper">
+            <ul class="companies-list">
+              <li class="company-item">Hospitality</li>
+              <li class="company-item">Real Estate</li>
+              <li class="company-item">Education</li>
+              <li class="company-item">Publishing</li>
+              <li class="company-item">Automotive</li>
+              <li class="company-item">Vehicle Leasing</li>
+            </ul>       
+        </div>
+        </div>
+        </nav>
+        <div class="social-media">
+          <p>Follow us on</p>
+          <img src="./images/social media icons.svg" class="social-icons" alt="Social Media Icons"  />
+          <img src="./images/secure global sign.svg" class="additional-icon"  alt="Additional Social Icon"  />
+        </div>
+      </div>
+     
+      <hr class="footer-divider" />
+      <p class="copyright">© 2018 Car rental LLC - All Rights Reserved.</p>
+    </div>
+  </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
