@@ -69,10 +69,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function updateImage() {
     const imgElement = document.getElementById('responsiveImage');
-    if (window.innerWidth <= 768) {
+    const bannerImage=document.getElementById('banner-image')
+    if (window.innerWidth <= 968) {
       imgElement.src = './images/Rectangle.svg';
+      bannerImage.src='./images/car cliped mob.svg'
     } else {
       imgElement.src = './images/Rectangle.png';
+      bannerImage.src='./images/banner org.svg'
     }
   }
   window.addEventListener('load', updateImage);

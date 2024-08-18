@@ -2,6 +2,7 @@ body{
    box-sizing: border-box;
    margin:0;
    padding:0;
+   overflow-x: hidden;
 
 } 
 
@@ -88,7 +89,7 @@ padding-bottom:6px;
   top:15px;
   right:64px;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1250px) {
      
     .nav__social-icons{
       display: none;
@@ -431,7 +432,7 @@ line-height:21px;
 }
 
 .banner__text{
-  position:absolute;
+    position:absolute;
     left:603px;
     top:270px;
     color: white;
@@ -663,10 +664,14 @@ box-sizing: border-box;
 .sub__2--input{
   padding-top: 12px;
   padding-bottom: 19px;
+  width: 100%; /* Ensure the container takes full width */
+  max-width: 100%;
   
 } 
 .sub__2--input input{
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   border:none;
   border-radius:5px;
   padding-top: 14px;
@@ -719,7 +724,8 @@ font-weight:500;
   padding-left:16px;
   padding-right:12px;
   align-items: center;
-  line-height: 14px;  
+  line-height: 14px; 
+  background-color: rgba(255, 255, 255, 0.2); 
 } 
 
 
@@ -1050,6 +1056,10 @@ align-items: center;
       margin-top: 24px;
       margin-bottom: 27px;
     }
+
+   .mobile{
+    display: none;
+   }
  
     @media (max-width: 970px) { 
       body{
@@ -1216,12 +1226,11 @@ align-items: center;
     margin:0;
     background-size: cover;
     object-fit: cover;
-    transform: scale(1.9);
-    padding-top:66px;
-    padding-bottom:60px;
+    padding-top:24px;
+    padding-bottom:24px;
    }  
    .cards{
-    padding:17px;
+    padding:0px 17px 17px 17px ;
    }
    .card__text{
     justify-content: start;
@@ -1344,6 +1353,7 @@ padding-right: 16px;
 }
   .sub__menu--2 {
    display: flex;
+   flex-wrap: wrap;
   } 
   .sub__2--desc__container{
     display: flex;
@@ -1351,12 +1361,18 @@ padding-right: 16px;
   }
   
   .sub__2--input{
-    display: none; 
+    display: none;
   }
   .sub__2--appLinks{
     order:1;  
     padding-top: 11px;
+    
   } 
+
+  .link{
+    width: 100%;
+    padding-right:20px;
+  }
   .sub__2--linkGroup{
     
     padding-top: 16px;
@@ -1368,15 +1384,137 @@ padding-right: 16px;
   
 
   .sub__2--headText{
-    order:2;
-    font-size: 12px;
-    padding-top:60  px;
-    line-height: 15.6px ;
+    display: none;
    
   }
+.sub__2--mobile{
+  display: block;
+  order:2;
+  font-size: 11px;
+  padding-top:60px;
+  line-height: 15.6px ;
+  max-width:170px;
+  font-weight:500px;
+}
+
   .sub__2--button{
     display: none ;
+  } 
+
+  .sub__inputbox--mobile{
+    display: block;
+    flex-basis: 100%;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right:16px;
+    padding-bottom:16px;
+   
   }
+
+  .sub__button--mobile{
+    padding-left:16px;
+    padding-bottom:24px;
+    display: block;
+    font-family: 'poppins';
+  }
+
+  .sub-button{
+    padding:9px 26px 10px 26px;
+    font-size: 13px;
+    font-family: 'poppins';
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius:4px;
+  }
+
+  .sub__inputbox--mobile input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 0px 13px 16px;
+    border-radius: 5px;
+    border: none;
+    
+  }
+
+  .rent__container{
+    padding-top: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+  } 
+
+  .rent__header{
+    font-size:18px;
+    font-weight: 400;
+    line-height: 24px;
+    justify-content: start;
+    margin-bottom: 16.5px;
+  }
+
+  .rentboxes__container{
+    flex-direction: column;
+  }
+
+  .rentBox__content{
+    max-width: 280px;
+    justify-content: center;
+  }
+  .location__section-wrapper{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 48px;
+  }
+  .locations{
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 0;
+    text-align: start ;
+
+  }
+
+  .locations__header{
+    font-size:18px;
+    font-weight: 100;
+    font-weight: 400;
+    margin-bottom:25px;
+    
+
+  }
+  .locations__list{
+    padding-left: 0px;
+    padding-right: 0px;
+    gap:40px;
+    flex-wrap: wrap;
+    justify-content:stretch;
+    padding-bottom: 24px;
+  }
+  .line{
+    display: none;
+  }
+
+  .accordion__section-header{
+    font-size: 20px;
+    font-weight: 400;
+    justify-content: start;
+    padding-left: 16px;
+  }
+
+  .accordion__section-wrapper{
+    padding: 0px 16px 57px 15px;
+  }
+  .accordion__header{
+    padding-top: 16.5px;
+    padding-bottom: 16.5px;
+  } 
+
+  .accordion__question:first-child{
+    padding-top: 0px;
+  }
+
+  
+
 }
 
     

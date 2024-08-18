@@ -282,21 +282,22 @@
 
         <div class="banner__container">
             <img
-                src="./images/bannner2.png"
+                src="./images/banner org.svg"
                 alt="Banner Image"
                 class="banner__image"
+                id="banner-image"
             />
-            <div class="banner__text">
+            <!-- <div class="banner__text">
                 Recieve guarnteed
                 <span class="gift__voucher">GIFT VOUCHER</span> <br />
                 on a monthly hire or lease
-            </div>
-            <div class="dots-container">
+            </div> -->
+            <!-- <div class="dots-container">
                 <span class="dot gray-dot"></span>
                 <span class="dot white-dot"></span>
                 <span class="dot gray-dot"></span>
                 <span class="dot gray-dot"></span>
-            </div>
+            </div> -->
         </div>
 
         <div class="cards">
@@ -425,7 +426,11 @@
            <div class="sub__2--desc__container">
               <div class="sub__2--headText">
                 Enter your number and receive <br/>
-                    a direct link to download the app
+                a direct link to download the app
+              </div>
+              <div class="sub__2--mobile mobile" >
+                Enter your number and <br/> receive 
+                a direct link <br/> to download the app
               </div>
               <div class="sub__2--input">
                     <input type="text" placeholder="Enter the phone number">
@@ -459,8 +464,15 @@
                     </div>
               </div>    
 
+           </div> 
+           <div class="sub__inputbox--mobile mobile">
+            <input type="text" placeholder="Enter phone number">
            </div>
-
+          <div class="sub__button--mobile mobile">
+            <button class="sub-button">
+                Get the link
+            </button>
+          </div>
         </div>
 
     </div>    
@@ -541,7 +553,7 @@
 </div>
 
 <!-- frequently asked questions -->
-<div class="accordion__section-header">Frequently asked questions</div>
+<div class="accordion__section-header">Frequently Asked Qsuestions</div>
 
 <!-- Accordion section --> 
 <div class="accordion__section-wrapper">
@@ -550,9 +562,9 @@
         <div class="accordion">
             <div class="accordion__header">
                 <span class="accordion__question">What is my eligibility to book a car?</span>
-                <!-- <span class="accordion__icon accordion__icon--open">
-                    <img src="./images/plus.svg" alt="Open">
-                  </span> -->
+                <span class="accordion__icon accordion__icon--open" style="display:none;">
+                    <img src="./images/xmark.svg" alt="Close">
+                </span>
                   <span class="accordion__icon accordion__icon--close">
                     <img src="./images/xmark.svg" alt="Close">
                   </span>
