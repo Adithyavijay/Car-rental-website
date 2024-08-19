@@ -80,3 +80,56 @@ function updateImage() {
   }
   window.addEventListener('load', updateImage);
   window.addEventListener('resize', updateImage);
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Function to check if the screen is mobile-sized
+    function isMobile() {
+        return window.innerWidth <= 768;
+    }
+
+    // Only run this code on mobile devices
+    if (isMobile()) {
+        const pickupBtn = document.querySelector('.mobile-pickup');
+        const dropoffBtn = document.querySelector('.mobile-dropoff');
+        const dropoffLocation = document.querySelector('.dropoff-location');
+        const pickupLocation = document.querySelector('.pickup-location');
+        
+        pickupBtn.classList.add('active');
+        pickupBtn.style.opacity = '1';
+        pickupBtn.style.textDecoration = 'underline';
+        dropoffLocation.style.display = 'none';
+        pickupLocation.style.display = 'block';
+
+        function toggleActive(activeElement, inactiveElement) {
+          activeElement.classList.add('active');
+          activeElement.style.opacity = '1';
+          activeElement.style.textDecoration = 'underline';
+
+          // Remove styles from the inactive element
+          inactiveElement.classList.remove('active');
+          inactiveElement.style.opacity = '0.7'; 
+          inactiveElement.style.textDecoration = 'none';
+        }
+        
+        pickupBtn.addEventListener('click', function() {
+            toggleActive(this, dropoffBtn);
+            dropoffLocation.style.display = 'none';
+            pickupLocation.style.display = 'block';
+        });
+
+        dropoffBtn.addEventListener('click', function() {
+            toggleActive(this, pickupBtn);
+            dropoffLocation.style.display = 'block';
+            pickupLocation.style.display = 'block';
+        });
+    }
+
+    // Listen for window resize events
+    window.addEventListener('resize', function() {
+        if (isMobile()) {
+            // Re-initialize mobile menu if needed
+        } else {
+            // Reset any mobile-specific changes if needed
+        }
+    });
+});

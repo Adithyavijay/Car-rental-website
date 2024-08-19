@@ -197,21 +197,21 @@
                 </div>
 
                 <div class="mobile__input-grp">
-                    <select class="location-select">
+                    <select class="location-select pickup-location">
                         <option value="al-quoz">Pick up Location</option>
                         <option value="al-quoz">Al Quoz</option>
                         <option value="deira">Deira</option>
                         <option value="jumeirah">Jumeirah</option>
                         <option value="marina">Marina</option>
                     </select>
-                    <select class="location-select">
+                    <select class="location-select dropoff-location" style="display: none;">
                         <option value="al-quoz">Drop Off Location</option>
                         <option value="al-quoz">Al Quoz</option>
                         <option value="deira">Deira</option>
                         <option value="jumeirah">Jumeirah</option>
                         <option value="marina">Marina</option>
                     </select>
-                    <div class="date-picker-container">
+                    <div class="date-picker-container pickup-time">
                         <!-- Hidden datetime-local input -->
                         <input
                             type="datetime-local"
@@ -221,11 +221,11 @@
                         />
 
                         <!-- Custom clickable area -->
-                        <div class="custom-date-picker">
+                        <div class="custom-date-picker ">
                             <input
                                 type="text"
                                 id="date-time-display"
-                                class="date-picker-display date-picker-display--2"
+                                class="date-picker-display"
                                 readonly
                                 placeholder="Pick-Up Date & Time"
                             />
@@ -241,7 +241,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="date-picker-container">
+                    <div class="date-picker-container dropoff-time">
                         <!-- Hidden datetime-local input -->
                         <input
                             type="datetime-local"
@@ -255,7 +255,7 @@
                             <input
                                 type="text"
                                 id="date-time-display"
-                                class="date-picker-display date-picker-display--2"
+                                class="date-picker-display "
                                 readonly
                                 placeholder="Drop Off Date & Time"
                             />
@@ -324,7 +324,7 @@
                             <div class="feature">
                                 <div class="icon__container">
                                     <img
-                                        src="./images/game-icons_car-door.png"
+                                        src="./images/automatic gear.svg"
                                         alt=""
                                     />
                                 </div>
@@ -332,7 +332,7 @@
                             </div>
                             <div class="feature">
                                 <div class="icon__container">
-                                    <img src="./images/automatic.png" alt="" />
+                                    <img src="./images/car door.svg" alt="" />
                                 </div>
                                 <span class="icon__text">5 doors</span>
                             </div>
@@ -368,12 +368,12 @@
                                 <div class="icon__container">
                                     <img src="./images/seat.png" alt="" />
                                 </div>
-                                <div class="icon__text">6 people</div>
+                                <span class="icon__text">6 people</span>
                             </div>
                             <div class="feature">
                                 <div class="icon__container">
                                     <img
-                                        src="./images/game-icons_car-door.png"
+                                        src="./images/automatic gear.svg"
                                         alt=""
                                     />
                                 </div>
@@ -381,7 +381,7 @@
                             </div>
                             <div class="feature">
                                 <div class="icon__container">
-                                    <img src="./images/game-icons_car-ggdoor.png" alt="" />
+                                    <img src="./images/car door.svg" alt="" />
                                 </div>
                                 <span class="icon__text">5 doors</span>
                             </div>
@@ -716,24 +716,29 @@
     <div class="mob-top">
     <div class="footer__header">
         <div class="footer__header-left">
-            <span class="icon"><img src="./images/company logo.svg" alt=""></span>
-            <span class="icon__text">Member of the <br /> Al Habtoor Group</span>
+           <img src="./images/mob-company-logo.svg" alt="">
         </div>
         <div class="footer__header-right">
-            <img src="./images/social media icons.svg" class="social-icons" alt="Social Media Icons"  />
+            <img src="./images/mob-social media icons.svg" class="social-icons" alt="Social Media Icons"  />
         </div>
         
     </div> 
-    <div class="mobile-companies_list-wrapper">
-        <ul class="mobile-companies-list">
-          <li class="mobile-item">Hospitality</li>
-          <li class="mobile-item">Real Estate</li>
-          <li class="mobile-item">Education</li>
-          <li class="mobile-item">Publishing</li>
-          <li class="mobile-item">Automotive</li>
-          <li class="mobile-item">Vehicle Leasing</li>
-        </ul>       
-    </div>
+        <div class="footer_link-wrapper">
+            <div class="mob_footer-links">
+                <a href="#" class="mob-footer-link">Home</a>
+            <a href="#" class="mob-footer-link">Offers</a>
+            <a href="#" class="mob-footer-link">Career</a>
+            <a href="#" class="mob-footer-link">About Us</a>
+            <a href="#" class="mob-footer-link">Locations</a>
+            <a href="#" class="mob-footer-link">FAQ</a>
+            <a href="#" class="mob-footer-link">Terms & Conditions</a>
+            <a href="#" class="mob-footer-link">Service Request</a>
+            <a href="#" class="mob-footer-link">Privacy Policy</a>
+            <a href="#" class="mob-footer-link">Services</a>
+            <a href="#" class="mob-footer-link">Contact Us</a>
+            </div>
+        </div>
+    
     </div>
      <div class="mob-bottom">
         <div class="mob_company_name">Al habtoor Companies</div>
@@ -741,7 +746,6 @@
             <ul class="mobile-companies-list">
               <li class="mobile-item">Hospitality</li>
               <li class="mobile-item">Real Estate</li>
-              <li class="mobile-item">Education</li>
               <li class="mobile-item">Publishing</li>
               <li class="mobile-item">Automotive</li>
               <li class="mobile-item">Vehicle Leasing</li>
