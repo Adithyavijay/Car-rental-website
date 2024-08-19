@@ -11,7 +11,7 @@ menu.addEventListener('click',function(){
 document.addEventListener('DOMContentLoaded', function() {
     function setupDatePicker(dateTimePickerId, dateTimeDisplayId) {
       const dateTimePicker = document.getElementById(dateTimePickerId);
-      const dateTimeDisplay = document.getElementById(dateTimeDisplayId);
+      const dateTimeDisplay = document.getElementById(dateTimeDisplayId);   
   
       // Set the default value and update display field
       const now = new Date();
@@ -74,7 +74,7 @@ function updateImage() {
       imgElement.src = './images/Rectangle.svg';
       bannerImage.src='./images/car cliped mob.svg'
     } else {
-      imgElement.src = './images/Rectangle.png';
+      imgElement.src = './images/Rectangle fon.svgesdasdsad';
       bannerImage.src='./images/banner org.svg'
     }
   }
