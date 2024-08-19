@@ -74,7 +74,7 @@ function updateImage() {
       imgElement.src = './images/Rectangle.svg';
       bannerImage.src='./images/car cliped mob.svg'
     } else {
-      imgElement.src = './images/Rectangle fon.svgesdasdsad';
+      imgElement.src = './images/Rectangle fon.svg';
       bannerImage.src='./images/banner org.svg'
     }
   }
