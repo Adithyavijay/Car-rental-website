@@ -4,7 +4,7 @@
 Welcome to the Car Rental Website! This website provides an intuitive and user-friendly interface for browsing, booking, and managing car rentals. It is built using HTML, CSS, and JavaScript to ensure compatibility and performance across various devices and browsers.
   
 ##  Demo
-Check out the live demo of the car rental website (here)[https://adithyavijay.github.io/Car-rental-website/].
+Check out the live demo of the car rental website [here](https://adithyavijay.github.io/Car-rental-website/).
 
 ### Features
 Responsive Design: Optimized for both desktop and mobile devices, ensuring a smooth and consistent user experience across different screen sizes.
