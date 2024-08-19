@@ -330,7 +330,7 @@
     opacity: 0  ; /* Hide the input but keep it interactive */
     width: 20px;    
     height: 100%;
-    left:6px;
+    left:7px;
     bottom:1px;     
     cursor: pointer; /* Show pointer cursor to indicate interactivity */
     z-index: 100;
@@ -380,8 +380,9 @@
   .straightline{
     width:1px;
     background-color: #fff; 
-    height:42px;
+    height:42px;  
   } 
+  
 
     .quickbook{
       padding: 11px 77px 13px 76px;
@@ -1178,6 +1179,7 @@
       .mobile__menu{
         padding-left: 16px;
         padding-right:16px;
+        padding-bottom: 24px;
         overflow: hidden;
       } 
       .mobile__menu-wrapper{
@@ -1205,6 +1207,7 @@
         font-family: 'poppins';
         font-weight: 500;
         letter-spacing: -0.3  px;
+        cursor:pointer;
         
       }
 
@@ -1213,10 +1216,12 @@
         text-decoration: underline;
         text-underline-offset: 6px;
         line-height: 56.74px;
+        cursor: pointer;
       } 
       .mobile-dropoff{
         opacity: 70%;
         line-height: 56.74px;
+        cursor: pointer;
       } 
 
     .location-select{
@@ -1316,7 +1321,7 @@
       margin:0;
       background-size: cover;
       object-fit: cover;
-      padding-top:24px;
+      
       padding-bottom:24px;
     }  
     .cards{

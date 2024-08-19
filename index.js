@@ -133,3 +133,21 @@ function updateImage() {
         }
     });
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const bookCarButton = document.querySelector(".book-car-btn");
+    const mobileMenu = document.querySelector(".mobile__menu");
+
+    bookCarButton.addEventListener("click", function() {
+        // Toggle the display of the mobile menu
+        if (mobileMenu.style.display === "none" || mobileMenu.style.display === "") {
+            mobileMenu.style.display = "block";
+        } else {
+            mobileMenu.style.display = "none";
+        }
+    });
+});
