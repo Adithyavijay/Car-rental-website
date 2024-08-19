@@ -72,9 +72,20 @@ function updateImage() {
     const bannerImage=document.getElementById('banner-image')
     if (window.innerWidth <= 968) {
       imgElement.src = './images/Rectangle.svg';
-      bannerImage.src='./images/car cliped mob.svg'
+      
     } else {
       imgElement.src = './images/Rectangle fon.svg';
+      
+    }
+  }
+function updateImage() {
+    const imgElement = document.getElementById('responsiveImage');
+    const bannerImage=document.getElementById('banner-image')
+    if (window.innerWidth <= 768) {
+     
+      bannerImage.src='./images/car cliped mob.svg'
+    } else {
+     
       bannerImage.src='./images/banner org.svg'
     }
   }
