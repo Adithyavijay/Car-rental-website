@@ -876,7 +876,9 @@
     background-color: white;
     opacity: 20%;
   } 
-
+  .accordion__icon{
+    cursor:pointer    
+  }
   /* accordion css */ 
   .accordion__section-wrapper{
     padding-left: 153px;
